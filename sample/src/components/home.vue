@@ -5,9 +5,9 @@
       <div class="row gx-4 gx-lg-5">
 
         <!-- colume1 liste de marques -->
-        <div class="col-md-3">
+        <div class="col-md-3 pt-5">
           <div class="card bg-black">
-            <ul class="card-body mb-0 p-5">
+            <ul class="card-body mb-0 p-4">
               <li class="list-group-item card-title text-white">TOUTES LES MARQUES</li>
               <li class="list-group-item card-title text-white">NIKE</li>
               <li class="list-group-item card-title text-white">ADIDAS</li>
@@ -21,9 +21,9 @@
         </div>
 
         <!-- colume2 liste de produits -->
-        <div class="col-md-5 my-5 layout-scrollbars">
+        <div class="col-md-5 my-5">
           <!-- Navbar Search-->
-          <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+          <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0 w-100">
             <div class="input-group">
               <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
               <button class="btn btn-dark" id="btnNavbarSearch" type="button">
@@ -35,8 +35,8 @@
           </form>
 
           <!-- liste de produits -->
-          <div class="container d-flex justify-content-center mt-50 mb-50">
-            <div class="row w-100">
+          <div class="layout-scrollbars">
+            <div class="row">
               <div v-for="product in products" class="row-md-12 liste-produit ">
 
                 <!-- utilise boule pour afficher des produits -->
