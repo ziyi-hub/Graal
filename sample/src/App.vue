@@ -10,25 +10,14 @@
 
     <router-view></router-view>
 
-    <div id="footer" style="text-align: center" class="footer_box">
-      <div style="font-size: 30px; color: #333">
-        <facebook-outlined style="margin: 4px" />
-        <instagram-outlined style="margin: 8px" />
-        <twitter-outlined style="margin: 4px" />
-      </div>
-      <div>Info · Support · Marketing</div>
-      <div>Terms of Use · Privacy Policy</div>
-      <div>© 2022 ELYF</div>
-    </div>
-
 
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'app',
+
   data () {
     return {
 
