@@ -7,7 +7,7 @@
         <!-- colume1 liste de marques -->
         <div class="col-md-3 pt-5">
           <div class="card bg-black">
-            <ul class="card-body mb-0 p-4">
+            <ul class="card-body mb-0 p-4 pt-5 pb-5">
               <li class="list-group-item card-title text-white">TOUTES LES MARQUES</li>
               <li class="list-group-item card-title text-white">NIKE</li>
               <li class="list-group-item card-title text-white">ADIDAS</li>
