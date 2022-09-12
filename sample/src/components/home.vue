@@ -21,7 +21,7 @@
         </div>
 
         <!-- colume2 liste de produits -->
-        <div class="col-md-5">
+        <div class="col-md-5 my-5 layout-scrollbars">
           <!-- Navbar Search-->
           <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
@@ -37,72 +37,37 @@
           <!-- liste de produits -->
           <div class="container d-flex justify-content-center mt-50 mb-50">
             <div class="row w-100">
-              <div class="row-md-12 liste-produit ">
+              <div v-for="product in products" class="row-md-12 liste-produit ">
 
-                <!-- produit1 -->
+                <!-- utilise boule pour afficher des produits -->
                 <div class="card card-body mt-3">
                   <div class="media align-items-center ">
-                    <div class="row align-items-start">
+                    <div class="row align-items-center">
                       <div class="col">
-                        <div class="mr-2 mb-3 mb-lg-0"><img src="https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwbd5a6bac/images/hi-res/001497464_101.png?sw=600&sh=600&sm=fit" width="150" height="150" alt=""></div>
+                        <div class="mr-2 mb-3 mb-lg-0"><img v-bind:src="product.img" width="150" height="150" alt=""></div>
                       </div>
                       <div class="col">
                         <div>
                           <div class="media-body">
                             <h6 class="media-title font-weight-semibold">
-                              <a href="#" data-abc="true">MARQUE</a>
+                              <a href="#" data-abc="true">{{ product.marque }}</a>
                             </h6>
                             <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
-                              <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">MODEL</a></li>
+                              <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">{{ product.model }}</a></li>
                             </ul>
                             <ul class="list-inline list-inline-dotted mb-0">
-                              <li class="list-inline-item">TAILLES RECHERCHÉES</li>
+                              <li class="list-inline-item">{{ product.tailles }}</li>
                             </ul>
                           </div>
-                          <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-                            <h3 class="mb-0 font-weight-semibold">$459.99</h3>
+                          <!--<div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                            <h3 class="mb-0 font-weight-semibold">€ {{ product.prix }} </h3>
                             <div>
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
                               <i class="fa fa-star"></i>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- produit2 -->
-                <div class="card card-body mt-3">
-                  <div class="media align-items-center ">
-                    <div class="row align-items-start">
-                      <div class="col">
-                        <div class="mr-2 mb-3 mb-lg-0"><img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/55bbafbe-01b7-4117-b63e-0d907ce06cf3/chaussure-jordan-1-mid-pour-plus-age-cMgFgw.png" width="150" height="150" alt=""></div>
-                      </div>
-                      <div class="col">
-                        <div>
-                          <div class="media-body">
-                            <h6 class="media-title font-weight-semibold">
-                              <a href="#" data-abc="true">MARQUE</a>
-                            </h6>
-                            <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
-                              <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">MODEL</a></li>
-                            </ul>
-                            <ul class="list-inline list-inline-dotted mb-0">
-                              <li class="list-inline-item">TAILLES RECHERCHÉES</li>
-                            </ul>
-                          </div>
-                          <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-                            <h3 class="mb-0 font-weight-semibold">$459.99</h3>
-                            <div>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                              <i class="fa fa-star"></i>
-                            </div>
-                          </div>
+                          </div>-->
                         </div>
                       </div>
                     </div>
@@ -136,38 +101,29 @@
 </template>
 
 <script>
+
   export default{
     data(){
       return{
         products : [
           {
-            productName: "Pommes bicolores 1kg",
-            price: 1.56,
-            quantity: 1,
-            soustotal : 0,
-            lien : "https://media.auchan.fr/MEDIASTEP102088922_230x230/B2CD/ 230w"
+            marque: "MARQUE1",
+            model: "MODEL1",
+            tailles: "TAILLES RECHERCHÉES1",
+            img : "https://www.courir.com/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dwbd5a6bac/images/hi-res/001497464_101.png?sw=600&sh=600&sm=fit"
           },
           {
-            productName: "Poires William bio 1kg",
-            price: 1.45,
-            quantity: 3,
-            soustotal : 0,
-            lien : "https://media.auchan.fr/MEDIASTEP102088926_230x230/B2CD/ 230w"
+            marque: "MARQUE2",
+            model: "MODEL2",
+            tailles: "TAILLES RECHERCHÉES2",
+            img : "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/55bbafbe-01b7-4117-b63e-0d907ce06cf3/chaussure-jordan-1-mid-pour-plus-age-cMgFgw.png"
           },
           {
-            productName: "Kiwi 1 pièce",
-            price: 0.99,
-            quantity: 5,
-            soustotal : 0,
-            lien : "https://media.auchan.fr/MEDIASTEP66817594_230x230/B2CD/ 230w"
+            marque: "MARQUE3",
+            model: "MODEL3",
+            tailles: "TAILLES RECHERCHÉES3",
+            img : "https://m.media-amazon.com/images/I/61J23MniCRL._AC_UY695_.jpg"
           },
-          {
-            productName: "Brocoli 500g",
-            price: 1.01,
-            quantity: 5,
-            soustotal : 0,
-            lien : "https://media.auchan.fr/MEDIASTEP146997015_230x230/B2CD/ 230w"
-          }
         ],
       }
     },
@@ -183,8 +139,8 @@
   background-color: black;
 }
 
-.liste-produit{
-  height:500px;
+.layout-scrollbars{
+  height: 400px;
   overflow-y: scroll;
 }
 
