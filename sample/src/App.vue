@@ -1,33 +1,41 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/mon_espace">MON ESPACE</router-link></li>
+      <li><router-link to="/mes_produits">MES PRODUITS</router-link></li>
+      <li><router-link to="/lister_un_produit">LISTER UN PRODUIT</router-link></li>
+      <li><router-link to="/faq">FAQ</router-link></li>
     </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+
+    <router-view></router-view>
+
+    <div id="footer" style="text-align: center" class="footer_box">
+      <div style="font-size: 30px; color: #333">
+        <facebook-outlined style="margin: 4px" />
+        <instagram-outlined style="margin: 8px" />
+        <twitter-outlined style="margin: 4px" />
+      </div>
+      <div>Info · Support · Marketing</div>
+      <div>Terms of Use · Privacy Policy</div>
+      <div>© 2022 ELYF</div>
+    </div>
+
+
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+
     }
   }
 }
+
 </script>
 
 <style>
@@ -56,5 +64,13 @@ li {
 
 a {
   color: #42b983;
+}
+
+.footer_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column wrap;
 }
 </style>
