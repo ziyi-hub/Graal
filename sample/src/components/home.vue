@@ -137,11 +137,40 @@
 
 <script>
   export default{
-    data () {
-      return {
-
+    data(){
+      return{
+        products : [
+          {
+            productName: "Pommes bicolores 1kg",
+            price: 1.56,
+            quantity: 1,
+            soustotal : 0,
+            lien : "https://media.auchan.fr/MEDIASTEP102088922_230x230/B2CD/ 230w"
+          },
+          {
+            productName: "Poires William bio 1kg",
+            price: 1.45,
+            quantity: 3,
+            soustotal : 0,
+            lien : "https://media.auchan.fr/MEDIASTEP102088926_230x230/B2CD/ 230w"
+          },
+          {
+            productName: "Kiwi 1 pièce",
+            price: 0.99,
+            quantity: 5,
+            soustotal : 0,
+            lien : "https://media.auchan.fr/MEDIASTEP66817594_230x230/B2CD/ 230w"
+          },
+          {
+            productName: "Brocoli 500g",
+            price: 1.01,
+            quantity: 5,
+            soustotal : 0,
+            lien : "https://media.auchan.fr/MEDIASTEP146997015_230x230/B2CD/ 230w"
+          }
+        ],
       }
-    }
+    },
   }
 </script>
 
