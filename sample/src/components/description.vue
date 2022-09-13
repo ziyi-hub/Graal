@@ -85,7 +85,7 @@
 
 <style>
 .carousel-item{
-  height: 70vh;
+  height: 65vh;
 }
 
 .btn-circle{
