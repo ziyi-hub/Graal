@@ -17,6 +17,7 @@
     "bootstrap-vue": "^2.22.0",
     "vue": "^2.5.11",
     "vue-axios": "^3.4.1",
+    "vue-concise-slider": "^4.2.5",
     "vue-router": "^3.5.3"
   },
   "browserslist": [

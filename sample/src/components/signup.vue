@@ -61,7 +61,7 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label text-muted" for="exampleCheck1">M'abonner a la newsletter</label>
             </div>
-            <button class="btn btn-dark" type="button">JE M'INSCRIS</button>
+            <router-link to="/description"><button v-on:click="" class="btn btn-dark" type="button">JE M'INSCRIS</button></router-link>
           </form>
       </div>
     </div>
@@ -76,7 +76,13 @@
 
 <script>
   export default{
+    methods : {
 
+    },
+
+    computed : {
+
+    },
   }
 </script>
 
