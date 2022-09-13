@@ -78,7 +78,7 @@
                   <h2 class="section-heading mb-4"><span class="section-heading-upper">Graal List</span></h2>
                   <p class="mb-3 text-start">Bienvenue sur la Graal List. Ici tu retrouveras toutes les paires que nous souhaitons racheter actuellement.</p>
                   <div class="d-flex">
-                    <router-link to="/inscription"><button class="signup btn btn-outline-light flex-shrink-0" type="button">S'INSCRIRE</button></router-link>
+                    <router-link to="/inscription"><button class="btn btn-dark" type="button">S'INSCRIRE</button></router-link>
                     <button type="button" class="btn btn-outline-dark flex-shrink-0">SE CONNECTER</button>
                   </div>
                 </div>
@@ -145,10 +145,6 @@
 <style>
 .list-group-item{
   text-align: left;
-}
-
-.signup{
-  background-color: black;
 }
 
 .layout-scrollbars{
