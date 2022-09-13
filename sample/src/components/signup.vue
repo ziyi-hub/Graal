@@ -45,7 +45,7 @@
             <!-- Téléphone -->
             <div class="mb-3">
               <label for="telephone" class="form-label">Téléphone</label>
-              <input type="number" class="form-control" id="telephone">
+              <input type="tel" class="form-control" id="telephone">
             </div>
 
             <!-- Mot de passe -->
@@ -130,7 +130,5 @@ import Navigation from "./navigation.vue";
 </script>
 
 <style>
-.input-group-addon{
-  border: 1px solid black;
-}
+
 </style>
