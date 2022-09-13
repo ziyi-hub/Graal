@@ -1,10 +1,14 @@
 <template>
-  <div class="row">
-    <!-- section 1 formulaire -->
-    <div class="col-xl-6">
-      <div class="card-body p-md-5 text-black text-uppercase">
-        <h1 class="text-start"><b>Inscription</b></h1>
-        <p class="text-muted mb-5 text-start">Tu as déjà un compte? <a href="#" class="fw-bold text-body"><u>CONNECTE TOI</u></a></p>
+  <div>
+    <!-- Navigation -->
+    <navigation theme="clair"></navigation>
+
+    <div class="row">
+      <!-- section 1 formulaire -->
+      <div class="col-xl-6">
+        <div class="card-body p-md-5 text-black text-uppercase">
+          <h1 class="text-start"><b>Inscription</b></h1>
+          <p class="text-muted mb-5 text-start">Tu as déjà un compte? <a href="#" class="fw-bold text-body"><u>CONNECTE TOI</u></a></p>
           <form class="row g-3 text-uppercase text-start">
             <!-- Genre -->
             <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
@@ -63,25 +67,31 @@
             </div>
             <router-link to="/description"><button v-on:click="" class="btn btn-dark" type="button">JE M'INSCRIS</button></router-link>
           </form>
+        </div>
+      </div>
+
+      <!-- section 2 image -->
+      <div class="col-xl-6 d-none d-xl-block">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp" alt="Sample photo" class="img-fluid"/>
       </div>
     </div>
-
-    <!-- section 2 image -->
-    <div class="col-xl-6 d-none d-xl-block">
-      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp" alt="Sample photo" class="img-fluid"/>
-    </div>
   </div>
+
 
 </template>
 
 <script>
-  export default{
-    methods : {
 
+import Navigation from "./navigation.vue";
+
+  export default{
+
+    components: { Navigation },
+
+    methods : {
     },
 
     computed : {
-
     },
   }
 </script>

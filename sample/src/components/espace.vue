@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>Espace</h1>
+    <!-- Navigation -->
+    <navigation theme="dark"></navigation>
+
+    <h1>Espace Contenu</h1>
   </div>
 </template>
 
 <script>
+import Navigation from "./navigation.vue";
   export default{
-
+    components: { Navigation },
   }
 </script>
 

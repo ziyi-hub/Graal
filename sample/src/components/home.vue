@@ -1,5 +1,8 @@
 <template>
   <div>
+    <!-- Navigation -->
+    <navigation theme="clair"></navigation>
+
     <!-- Product section -->
     <div class="px-5 px-lg-5 pt-5 my-0">
       <div class="row gx-4 gx-lg-5">
@@ -92,8 +95,9 @@
 </template>
 
 <script>
-
+import Navigation from "./navigation.vue";
   export default{
+    components: { Navigation },
     data(){
       return{
         mot : null,
