@@ -12,6 +12,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Homepage from './components/home.vue'
 import NotFound from './components/notfound.vue'
+import Signup from './components/signup.vue'
 
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
@@ -20,6 +21,7 @@ const router = new VueRouter({
   mode : "history",
   routes : [
     {path: "/", component: Homepage},
+    {path: "/inscription", component: Signup},
     {path: "*", component: NotFound} //A mettre a la fin de tous les routeurs
   ]
 })
