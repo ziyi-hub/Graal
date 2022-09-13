@@ -3,7 +3,7 @@
     <!-- section 1 formulaire -->
     <div class="col-xl-6">
       <div class="card-body p-md-5 text-black text-uppercase">
-        <h3 class="text-start">Inscription</h3>
+        <h1 class="text-start"><b>Inscription</b></h1>
         <p class="text-muted mb-5 text-start">Tu as déjà un compte? <a href="#" class="fw-bold text-body"><u>CONNECTE TOI</u></a></p>
           <form class="row g-3 text-uppercase text-start">
             <!-- Genre -->
