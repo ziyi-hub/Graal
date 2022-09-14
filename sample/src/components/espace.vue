@@ -9,6 +9,7 @@
       <h1 class="text-start text-white text-uppercase"><b>Mon espace personnel</b></h1>
       <div class="row gx-4 gx-lg-5">
 
+        <!-- colume 1 -->
         <div class="col-md-4 pt-5">
           <div class="card bg-white">
 
@@ -38,7 +39,7 @@
           </div>
         </div>
 
-
+        <!-- colume 2 -->
         <div class="col-md-4 my-5">
           <div class="card bg-white">
 
@@ -64,6 +65,7 @@
           </div>
         </div>
 
+        <!-- colume 3 -->
         <div class="col-md-4 my-5">
           <div class="card bg-white">
             <ul class="card-body mb-0 p-4 pt-5 pb-5 text-black text-start">

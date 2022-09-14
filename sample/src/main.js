@@ -16,6 +16,7 @@ import Signup from './components/signup.vue'
 import Login from './components/login.vue'
 import Description from './components/description.vue'
 import Espace from './components/espace.vue'
+import ListerUnProduit from './components/lister_un_produit.vue'
 
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
@@ -28,6 +29,7 @@ const router = new VueRouter({
     {path: "/connexion", component: Login},
     {path: "/description", component: Description},
     {path: "/espace", component: Espace},
+    {path: "/lister_un_produit", component: ListerUnProduit},
     {path: "*", component: NotFound} //A mettre a la fin de tous les routeurs
   ]
 })
