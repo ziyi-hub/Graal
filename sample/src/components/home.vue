@@ -80,9 +80,9 @@
                 <div class="intro-text left-0 text-center bg-faded p-5 rounded">
                   <h2 class="section-heading mb-4"><span class="section-heading-upper">Graal List</span></h2>
                   <p class="mb-3 text-start">Bienvenue sur la Graal List. Ici tu retrouveras toutes les paires que nous souhaitons racheter actuellement.</p>
-                  <div class="d-flex">
-                    <router-link to="/inscription"><button class="btn btn-dark" type="button">S'INSCRIRE</button></router-link>
-                    <button type="button" class="btn btn-outline-dark flex-shrink-0">SE CONNECTER</button>
+                  <div>
+                    <router-link to="/inscription"><button class="btn btn-dark w-100 mb-2" type="button">S'INSCRIRE</button></router-link>
+                    <router-link to="/connexion"><button type="button" class="btn btn-outline-dark flex-shrink-0 w-100">SE CONNECTER</button></router-link>
                   </div>
                 </div>
               </div>
@@ -154,6 +154,10 @@ import Navigation from "./navigation.vue";
 .layout-scrollbars{
   height: 400px;
   overflow-y: scroll;
+}
+
+a{
+  color: black;
 }
 
 </style>

@@ -8,7 +8,7 @@
       <div class="col-xl-6">
         <div class="card-body p-md-5 text-black text-uppercase">
           <h1 class="text-start"><b>Inscription</b></h1>
-          <p class="text-muted mb-5 text-start">Tu as déjà un compte? <a href="#" class="fw-bold text-body"><u>CONNECTE TOI</u></a></p>
+          <p class="text-muted mb-5 text-start">Tu as déjà un compte? <router-link to="/connexion"><a class="fw-bold text-body"><u>CONNECTE TOI</u></a></router-link></p>
           <form class="row g-3 text-uppercase text-start">
             <!-- Genre -->
             <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
