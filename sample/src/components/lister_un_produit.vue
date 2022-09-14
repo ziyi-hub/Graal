@@ -156,7 +156,7 @@
             </div>
 
             <div class="text-end col pb-5">
-              <button type="button" class="btn btn-dark"><b>VALIDER</b></button>
+              <button type="button" class="btn btn-dark"><b>AJOUTER MON PRODUIT</b></button>
             </div>
           </div>
 
