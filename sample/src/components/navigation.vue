@@ -13,7 +13,7 @@
           <router-link to="/espace" v-bind:class="className">
             <li class="nav-item"><b>MON ESPACE</b></li>
           </router-link>
-          <router-link to="/mes_produits" v-bind:class="className">
+          <router-link to="/suivi_produits" v-bind:class="className">
             <li class="nav-item"><b>MES PRODUITS</b></li>
           </router-link>
           <router-link to="/lister_un_produit" v-bind:class="className">

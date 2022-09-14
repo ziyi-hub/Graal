@@ -19,7 +19,7 @@ import Espace from './components/espace.vue'
 import ListerUnProduit from './components/lister_un_produit.vue'
 import ModesPaiement from './components/modes_de_paiement.vue'
 import Faq from './components/faq.vue'
-
+import SuiviProduits from './components/suivi_de_produits.vue'
 
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
@@ -35,6 +35,7 @@ const router = new VueRouter({
     {path: "/modes_paiement", component: ModesPaiement},
     {path: "/lister_un_produit", component: ListerUnProduit},
     {path: "/faq", component: Faq},
+    {path: "/suivi_produits", component: SuiviProduits},
     {path: "*", component: NotFound} //A mettre a la fin de tous les routeurs
   ]
 })
