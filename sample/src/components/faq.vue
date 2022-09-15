@@ -10,8 +10,8 @@
         <router-link to="/espace" class="col-md-1">
           <button type="button" class="btn btn-dark text-uppercase ">Retour</button>
         </router-link>
-        <!-- container importer option1 produit -->
-        <div class="container-produit row align-items-start">
+
+        <!--<div class="container-produit row align-items-start">-->
           <div class="col-md-12 my-5 text-black text-start">
 
             <b>Lorem Ipsum is simply dummy text of the printing?</b>
@@ -30,7 +30,7 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
 
           </div>
-        </div>
+        <!--</div>-->
       </div>
     </div>
 

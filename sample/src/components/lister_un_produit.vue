@@ -149,8 +149,8 @@
                   </div>
                 </div>
                 <div class="row text-start p-4 pt-0">
-                  <p>Votre fichier à bien été importé</p>
-                  <p>Echec de l'importation de votre fichier</p>
+                  <p class="text-success">Votre fichier à bien été importé</p>
+                  <p class="text-danger">Echec de l'importation de votre fichier</p>
                 </div>
               </div>
             </div>
@@ -179,8 +179,8 @@
                     <button type="button" class="btn btn-dark"><b>CONNECTER</b></button>
                   </li>
                   <li>
-                    <p>Votre fichier à bien été importé</p>
-                    <p>Echec de l'importation de votre fichier</p>
+                    <p class="text-success">Votre fichier à bien été importé</p>
+                    <p class="text-danger">Echec de l'importation de votre fichier</p>
                   </li>
                 </ul>
               </div>
@@ -274,14 +274,6 @@ export default{
 
 p{
   margin: 0;
-}
-
-p:nth-child(1) {
-  color: forestgreen;
-}
-
-p:nth-child(2) {
-  color: red;
 }
 
 .checkboxs{
