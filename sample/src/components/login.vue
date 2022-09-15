@@ -8,7 +8,9 @@
       <div class="col-xl-6">
         <div class="card-body p-md-5 text-black text-uppercase">
           <h1 class="text-center"><b>CONNEXION</b></h1>
-          <p class="text-muted text-center">Tu n'as pas de compte? <router-link to="/inscription"><a class="fw-bold text-body"><u>INSCRIS TOI</u></a></router-link></p>
+          <p class="text-muted text-center">Tu n'as pas de compte?
+            <router-link to="/inscription"><a class="fw-bold text-body"><u>INSCRIS TOI</u></a></router-link>
+          </p>
           <form class="row g-3 p-md-5 text-uppercase text-start">
 
             <!-- E-mail -->
@@ -30,7 +32,9 @@
                 </span>
               </div>
             </div>
-            <p class="text-muted oublie-mot-de-passe"><u>J'ai oublié mon mot de passe</u></p>
+            <router-link to="/forgot_password">
+              <p class="text-muted oublie-mot-de-passe"><u>J'ai oublié mon mot de passe</u></p>
+            </router-link>
 
             <button v-on:click="" class="btn btn-dark" type="button">CONNEXION</button>
           </form>

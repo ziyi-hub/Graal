@@ -21,6 +21,7 @@ import ModesPaiement from './components/modes_de_paiement.vue'
 import Faq from './components/faq.vue'
 import SuiviProduits from './components/suivi_de_produits.vue'
 import Adresses from './components/adresses.vue'
+import ForgetPassword from './components/forgotPassword.vue'
 
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
@@ -38,6 +39,7 @@ const router = new VueRouter({
     {path: "/faq", component: Faq},
     {path: "/adresses", component: Adresses},
     {path: "/suivi_produits", component: SuiviProduits},
+    {path: "/forgot_password", component: ForgetPassword},
     {path: "*", component: NotFound} //A mettre a la fin de tous les routeurs
   ]
 })
