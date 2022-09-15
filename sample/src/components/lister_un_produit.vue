@@ -27,10 +27,10 @@
               <!-- liste de produits -->
               <div class="layout-scrollbars">
                 <div class="row">
-                  <div v-for="product in products" class="row-md-12 liste-produit ">
+                  <div v-for="(product, index) in products" class="row-md-12 liste-produit ">
 
                     <!-- utilise boule pour afficher des produits -->
-                    <div class="card card-body mt-3" v-on:click="clickMasquerProduit()">
+                    <div class="card card-body mt-3" v-on:click="clickMasquerProduit(index)">
                       <div class="media align-items-center ">
                         <div class="row align-items-center">
                           <div class="col">
@@ -83,8 +83,8 @@
                 <div class="row align-items-center">
                   <div class="col">
                     <ul class="card-body mb-0 p-4 pt-5 text-black text-start text-uppercase">
-                      <li class="list-group-item card-title"><b>Nike</b></li>
-                      <li class="list-group-item card-title">AJ1 mid mcr</li>
+                      <li class="list-group-item card-title"><b>{{ marque }}</b></li>
+                      <li class="list-group-item card-title">{{ model }}</li>
                       <li class="card-title row checkboxs">
                         <div class="col-md-4">
                           <input class="form-check-input" type="checkbox" value="" id="tailles_37">
@@ -145,7 +145,7 @@
                     </ul>
                   </div>
                   <div class="col mb-0 p-4 pt-5">
-                    <img src="https://m.media-amazon.com/images/I/61J23MniCRL._AC_UY695_.jpg" width="200" height="200" alt="">
+                    <img v-bind:src="img" width="200" height="200" alt="">
                   </div>
                 </div>
                 <div class="row text-start p-4 pt-0">
@@ -207,6 +207,10 @@ export default{
       mot : null,
       statusMasquer : true,
       statusMasquerProduit : true,
+      marque: null,
+      model: null,
+      img: null,
+
       products : [
         {
           marque: "MARQUE1",
@@ -240,14 +244,21 @@ export default{
       this.statusMasquer = !this.statusMasquer;
     },
 
-    clickMasquerProduit(){
+    clickMasquerProduit(product){
       if (this.statusMasquerProduit === true){
         document.querySelector(".container-produit").style.display = "block";
+        this.setValProduit(product);
       }else{
         document.querySelector(".container-produit").style.display = "none";
       }
       this.statusMasquerProduit = !this.statusMasquerProduit;
     },
+
+    setValProduit(product){
+      this.marque = this.products[product].marque;
+      this.model = this.products[product].model;
+      this.img = this.products[product].img;
+    }
   }
 }
 </script>
