@@ -10,17 +10,25 @@
           <router-link to="/" v-bind:class="className">
             <li class="nav-item"></li>
           </router-link>
-          <router-link to="/espace" v-bind:class="className">
-            <li class="nav-item"><b>MON ESPACE</b></li>
+          <router-link to="/espace">
+            <li class="nav-item">
+              <a v-bind:class="className" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">MON ESPACE</a>
+            </li>
           </router-link>
-          <router-link to="/suivi_produits" v-bind:class="className">
-            <li class="nav-item"><b>MES PRODUITS</b></li>
+          <router-link to="/suivi_produits">
+            <li class="nav-item">
+              <a v-bind:class="className" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">MES PRODUITS</a>
+            </li>
           </router-link>
-          <router-link to="/lister_un_produit" v-bind:class="className">
-            <li class="nav-item"><b>LISTER UN PRODUIT</b></li>
+          <router-link to="/lister_un_produit">
+            <li class="nav-item">
+              <a v-bind:class="className" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">LISTER UN PRODUIT</a>
+            </li>
           </router-link>
-          <router-link to="/faq" v-bind:class="className">
-            <li class="nav-item"><b>FAQ</b></li>
+          <router-link to="/faq">
+            <li class="nav-item">
+              <a v-bind:class="className" class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">FAQ</a>
+            </li>
           </router-link>
         </ul>
       </div>
@@ -60,6 +68,7 @@
 }
 
 .color-white {color: white;}
+.color-white:hover {color: white;}
 .color-black {color: black;}
 
 </style>
