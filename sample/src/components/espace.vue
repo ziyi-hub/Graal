@@ -74,7 +74,7 @@
               <!-- liste de produits -->
               <div class="layout-scrollbars">
                 <div class="row">
-                  <div v-for="product in products" class="row-md-12 liste-produit ">
+                  <div v-for="product in products" class="row-md-12">
 
                     <!-- utilise boule pour afficher des produits -->
                     <div class="card card-body mt-3">
