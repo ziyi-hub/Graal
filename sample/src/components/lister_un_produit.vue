@@ -30,7 +30,7 @@
                   <div v-for="(product, index) in products" class="row-md-12 liste-produit ">
 
                     <!-- utilise boule pour afficher des produits -->
-                    <div class="card card-body mt-3" v-on:click="clickMasquerProduit(index)">
+                    <div class="card card-body mt-3 hover-black" v-on:click="clickMasquerProduit(index)">
                       <div class="media align-items-center ">
                         <div class="row align-items-center">
                           <div class="col">
@@ -293,6 +293,11 @@ p{
 
 .container-produit, .container-import{
   display: none;
+}
+
+.hover-black:hover{
+  background-color: black;
+  color: white;
 }
 
 
