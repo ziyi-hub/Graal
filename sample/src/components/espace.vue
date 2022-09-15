@@ -35,7 +35,9 @@
               <li class="list-group-item card-title"><b>Mode de paiement</b></li>
               <li class="list-group-item card-title">Vous n'avez pas encore ajouter de mode de paiement</li>
             </ul>
-            <button type="button" class="btn btn-dark">Configurer</button>
+            <router-link to="/modes_paiement">
+              <button type="button" class="btn btn-dark w-100">Configurer</button>
+            </router-link>
           </div>
         </div>
 
@@ -63,39 +65,44 @@
               <li class="list-group-item card-title">Ville: <b>SURY-LE-COMTAL</b></li>
               <li class="list-group-item card-title">Pays: <b>France</b></li>
             </ul>
-            <button type="button" class="btn btn-dark">Ajouter une autre adresse</button>
+            <router-link to="/adresses">
+              <button type="button" class="btn btn-dark w-100">Ajouter une autre adresse</button>
+            </router-link>
           </div>
         </div>
 
         <!-- colume 3 -->
         <div class="col-md-4 my-5">
           <div class="card bg-white">
-            <ul class="card-body mb-0 p-4 pt-5 pb-5 text-black text-start">
-              <li class="list-group-item card-title text-uppercase"><b>Mes produits listés</b></li>
 
-              <!-- liste de produits -->
-              <div class="layout-scrollbars">
-                <div class="row">
-                  <div v-for="product in products" class="row-md-12">
+            <router-link to="/suivi_produits">
+              <ul class="card-body mb-0 p-4 pt-5 pb-5 text-black text-start">
+                <li class="list-group-item card-title text-uppercase"><b>Mes produits listés</b></li>
 
-                    <!-- utilise boule pour afficher des produits -->
-                    <div class="card card-body mt-3">
-                      <div class="media align-items-center ">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <div class="mr-2 mb-3 mb-lg-0"><img v-bind:src="product.img" width="100" height="100" alt=""></div>
-                          </div>
-                          <div class="col">
-                            <div class="media-body">
-                              <h6 class="media-title font-weight-semibold">
-                                <li class="list-inline-item"><a data-abc="true">{{ product.marque }}</a></li>
-                              </h6>
-                              <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
-                                <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">{{ product.model }}</a></li>
-                              </ul>
-                              <ul class="list-inline list-inline-dotted mb-0">
-                                <li class="list-inline-item">{{ product.tailles }}</li>
-                              </ul>
+                <!-- liste de produits -->
+                <div class="layout-scrollbars">
+                  <div class="row">
+                    <div v-for="product in products" class="row-md-12">
+
+                      <!-- utilise boule pour afficher des produits -->
+                      <div class="card card-body mt-3">
+                        <div class="media align-items-center ">
+                          <div class="row align-items-center">
+                            <div class="col">
+                              <div class="mr-2 mb-3 mb-lg-0"><img v-bind:src="product.img" width="100" height="100" alt=""></div>
+                            </div>
+                            <div class="col">
+                              <div class="media-body">
+                                <h6 class="media-title font-weight-semibold">
+                                  <li class="list-inline-item"><a data-abc="true">{{ product.marque }}</a></li>
+                                </h6>
+                                <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                  <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">{{ product.model }}</a></li>
+                                </ul>
+                                <ul class="list-inline list-inline-dotted mb-0">
+                                  <li class="list-inline-item">{{ product.tailles }}</li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -103,9 +110,12 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </ul>
-            <button type="button" class="btn btn-dark">Ajouter des produits</button>
+              </ul>
+            </router-link>
+
+            <router-link to="/lister_un_produit">
+              <button type="button" class="btn btn-dark w-100">Ajouter des produits</button>
+            </router-link>
           </div>
         </div>
       </div>
