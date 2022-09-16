@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
+import store from './store'
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -10,18 +11,18 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import Homepage from './components/home.vue'
-import NotFound from './components/notfound.vue'
-import Signup from './components/signup.vue'
-import Login from './components/login.vue'
-import Description from './components/description.vue'
-import Espace from './components/espace.vue'
-import ListerUnProduit from './components/lister_un_produit.vue'
-import ModesPaiement from './components/modes_de_paiement.vue'
-import Faq from './components/faq.vue'
-import SuiviProduits from './components/suivi_de_produits.vue'
-import Adresses from './components/adresses.vue'
-import ForgetPassword from './components/forgotPassword.vue'
+import Homepage from './views/home.vue'
+import NotFound from './views/notfound.vue'
+import Signup from './views/signup.vue'
+import Login from './views/login.vue'
+import Description from './views/description.vue'
+import Espace from './views/espace.vue'
+import ListerUnProduit from './views/lister_un_produit.vue'
+import ModesPaiement from './views/modes_de_paiement.vue'
+import Faq from './views/faq.vue'
+import SuiviProduits from './views/suivi_de_produits.vue'
+import Adresses from './views/adresses.vue'
+import ForgetPassword from './views/forgotPassword.vue'
 
 Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
@@ -50,5 +51,6 @@ Vue.use(IconsPlugin)
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })
