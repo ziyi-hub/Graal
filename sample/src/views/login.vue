@@ -36,7 +36,9 @@
               <p class="text-muted oublie-mot-de-passe"><u>J'ai oublié mon mot de passe</u></p>
             </router-link>
 
-            <button v-on:click="" class="btn btn-dark" type="button">CONNEXION</button>
+            <router-link to="/espace">
+              <button v-on:click="connexion()" class="btn btn-dark" type="button">CONNEXION</button>
+            </router-link>
           </form>
         </div>
       </div>
@@ -54,12 +56,21 @@
 <script>
 
 import Navigation from "../components/navigation.vue";
+import axios from 'axios';
 
   export default{
 
     components: { Navigation },
 
+    data() {
+      return {
+        login: "",
+        password: ""
+      }
+    },
+
     methods : {
+
       clickMasquer(){
         let input = document.getElementById("password");
         if (input.type === "password") {
@@ -68,6 +79,28 @@ import Navigation from "../components/navigation.vue";
           input.type = "password";
         }
       },
+
+      connexion(){
+        /*
+        let data = {
+          "login": this.login,
+          "password": this.password
+        }
+        axios
+          .post("http://", data)
+          .then(response => {
+            this.$store.commit('setToken', response.data.user.token);
+            this.$store.commit('setAdmin', response.data.user.username);
+            this.$store.commit('setConnected', true);
+            this.$router.push('/');
+          })
+          .catch(error => {
+            console.log(error);
+          });
+
+         */
+      }
+
     },
 
     computed : {
